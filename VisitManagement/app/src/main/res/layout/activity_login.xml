@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical"
+    android:background="#FFFFFF">
+
+    <TextView
+        android:id="@+id/loginText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="100dp"
+        android:gravity="center"
+        android:text="LOG-IN"
+
+
+
+        >
+
+    </TextView>
+
+    <EditText
+        android:id="@+id/et_id"
+        android:layout_width="match_parent"
+        android:hint="아이디를 입력하세요."
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="16dp"
+
+        >
+    </EditText>
+    <EditText
+        android:id="@+id/et_pw"
+        android:layout_width="match_parent"
+        android:hint="비밀번호를 입력하세요."
+        android:layout_height="50dp"
+        android:layout_marginBottom="16dp"
+
+        >
+    </EditText>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_login"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Log-in"
+        android:layout_marginBottom="16dp"
+        />
+
+
+
+    <TextView
+        android:id="@+id/rememberCheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="회원가입"
+        android:layout_gravity="center"
+        android:layout_marginBottom="16dp"
+        >
+    </TextView>
+
+</LinearLayout>
