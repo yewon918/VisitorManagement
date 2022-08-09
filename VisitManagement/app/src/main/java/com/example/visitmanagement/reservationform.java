@@ -1,5 +1,6 @@
 package com.example.visitmanagement;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
@@ -17,7 +18,7 @@ public class reservationform extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_reservationform);
 
-        textView=findViewById(R.id.place_text);
+       /* textView=findViewById(R.id.place_text);
         Spinner spinner=findViewById(R.id.spinner);
         ArrayAdapter<String> adapter= new ArrayAdapter<String>(
                 this, android.R.layout.simple_spinner_item,items);
@@ -33,7 +34,7 @@ public class reservationform extends AppCompatActivity {
 
             @Override
             public void onNothingSelected(AdapterView<?> parent) {textView.setText("");}
-        });
+        });*/
     }
 
 }
