@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/history"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="나의 방문 기록"
+        android:layout_marginTop="10dp"
+
+        android:textSize="20sp"
+        />
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="한달단위 날짜 출력(2021.01)"
+        android:layout_marginBottom="10dp"
+        android:textSize="20sp"
+        />
+    <TextView
+        android:id="@+id/confirm_history"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="날짜랑 승인여부 출력"
+        android:layout_marginBottom="10dp"
+        android:textSize="20sp"
+        />
+</LinearLayout>
