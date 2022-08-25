@@ -2,8 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     package="com.example.visitmanagement">
-    <uses-permission android:name="android.permission.INTERNET"/>
 
+    <uses-permission android:name="android.permission.INTERNET" /> <!-- 인터넷 권한 선언-->
 
     <application
         android:allowBackup="true"
@@ -15,21 +15,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.VisitManagement"
         tools:targetApi="31">
-        <activity
-            android:name=".history"
-            android:exported="false" />
-        <activity
-            android:name=".reservationform"
-            android:exported="false" />
-        <activity
-            android:name=".register"
-            android:exported="false" />
-        <activity
-            android:name=".login"
-            android:exported="false" />
-        <activity
-            android:name=".mypage"
-            android:exported="false" />
+
         <activity
             android:name=".MainActivity"
             android:exported="true">
@@ -39,7 +25,30 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".customer_login" />
+        <activity
+            android:name=".Mainpage"
+            android:exported="true" />
+        <activity
+            android:name=".history"
+            android:exported="true" />
+        <activity
+            android:name=".reservationform"
+            android:exported="true" />
+        <activity
+            android:name=".RegisterActivity"
+            android:exported="true" />
+        <activity
+            android:name=".LoginActivity"
+            android:exported="true"
+            />
+        <activity
+            android:name=".mypage"
+            android:exported="true"
+       />
+
+        <activity android:name=".customer_login"
+            android:exported="true"
+   />
     </application>
 
 </manifest>
