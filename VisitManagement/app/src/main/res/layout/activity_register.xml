@@ -114,8 +114,8 @@
         android:orientation="horizontal"
         android:weightSum="10"
         >
-        <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/btn_regis"
+        <Button
+            android:id="@+id/btn_register"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:text="@string/btn_register"
