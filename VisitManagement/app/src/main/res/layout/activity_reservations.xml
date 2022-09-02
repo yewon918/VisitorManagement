@@ -3,7 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#ffffff">
+    android:background="#ffffff"
+    tools:context=".reservations">
 
 
     <LinearLayout
@@ -42,15 +43,15 @@
                 android:layout_marginRight="30dp"
                 android:orientation="vertical" >
 
-                <TextView
-                    android:id="@+id/signNametext"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="5dp"
-                    android:text=""
-                    android:textSize="20dp"
-                    android:textStyle="bold"
-                    />
+<!--                <TextView-->
+<!--                    android:id="@+id/signNametext"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginBottom="5dp"-->
+<!--                    android:text=""-->
+<!--                    android:textSize="20dp"-->
+<!--                    android:textStyle="bold"-->
+<!--                    />-->
 
                 <TextView
                     android:id="@+id/date_text"
@@ -82,19 +83,19 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
 
-                    <EditText
-                        android:id="@+id/place_text"
+                    <TextView
+                        android:id="@+id/placeView"
                         android:layout_width="wrap_content"
                         android:layout_height="40dp"
                         android:layout_marginBottom="20dp"
-                        android:ems="10"
-                        android:inputType="textPersonName"
+                        android:ems="15"
                         android:text="" />
                     <Spinner
                         android:id="@+id/spinner"
                         android:layout_centerHorizontal="true"
                         android:layout_width="20dp"
-                        android:layout_height="wrap_content"/>
+                        android:layout_height="wrap_content"
+                        android:spinnerMode="dropdown"/>
 
 
                 </LinearLayout>

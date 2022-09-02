@@ -32,8 +32,9 @@
             android:name=".history"
             android:exported="true" />
         <activity
-            android:name=".reservationform"
-            android:exported="true" />
+            android:name=".reservations"
+            android:exported="true"
+    />
         <activity
             android:name=".RegisterActivity"
             android:exported="true" />

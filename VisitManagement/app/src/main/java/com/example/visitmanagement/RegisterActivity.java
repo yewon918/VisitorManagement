@@ -24,6 +24,7 @@ public class RegisterActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register);
+
         //값 찾아주기
         et_id=findViewById(R.id.et_id);
         et_pw=findViewById(R.id.et_pw);
@@ -43,14 +44,17 @@ public class RegisterActivity extends AppCompatActivity {
             int userPhone=Integer.parseInt(et_phone.getText().toString());
             String userBelong=et_belong.getText().toString();
 
+            Intent intent=new Intent(RegisterActivity.this, Mainpage.class);
+            startActivity(intent);
+
             Response.Listener<String> responseListener= response -> {
                 try{
                     JSONObject jsonObject=new JSONObject(response);
                     boolean success=jsonObject.getBoolean("success");
                     if(success){
                         Toast.makeText(getApplicationContext(),"회원가입을 완료하였습니다.",Toast.LENGTH_SHORT).show();
-                        Intent intent=new Intent(RegisterActivity.this, LoginActivity.class);
-                        startActivity(intent);
+//                        Intent intent=new Intent(RegisterActivity.this, LoginActivity.class);
+//                        startActivity(intent);
                     }else{
                         Toast.makeText(getApplicationContext(), "회원가입에 실패하였습니다.", Toast.LENGTH_SHORT).show();
                     return;
