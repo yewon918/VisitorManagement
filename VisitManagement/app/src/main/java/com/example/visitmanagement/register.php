@@ -1,7 +1,5 @@
-<?php 
-    header('Context-Type: application/json');
-
-    $con = mysqli_connect("localhost", "root", "root", "rtw");
+<?php
+    $con = mysqli_connect("localhost", "ferrydraw", "hsh0729!", "ferrydraw");
     mysqli_query($con,'SET NAMES utf8');
 
     $ID = isset($_POST["ID"]) ? $_POST["ID"] : "";
