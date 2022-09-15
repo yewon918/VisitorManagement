@@ -1,5 +1,7 @@
 <?php
-    $con = mysqli_connect("localhost", "ferrydraw", "hsh0729!", "ferrydraw");
+    header('Context-Type: application/json');
+
+    $con = mysqli_connect("localhost", "root", "root", "rtw");
     mysqli_query($con,'SET NAMES utf8');
     //mysqli_set_charset($con, "utf8");
 
@@ -26,7 +28,6 @@
         //$response["Face_Photo"] = $Face_Photo;
         $response["Belonging"] = $Belonging;        
     }
-    header('Context-Type: application/json');
     echo json_encode($response);
 
 
