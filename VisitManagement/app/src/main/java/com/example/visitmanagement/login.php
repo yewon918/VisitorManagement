@@ -1,7 +1,7 @@
 <?php
     header('Context-Type: application/json');
 
-    $con = mysqli_connect("localhost", "root", "root", "rtw");
+    $con = mysqli_connect("localhost", "ferrydraw", "hsh0729!", "ferrydraw");
     mysqli_query($con,'SET NAMES utf8');
     //mysqli_set_charset($con, "utf8");
 

@@ -9,21 +9,20 @@ import java.util.HashMap;
 import java.util.Map;
 public class RegisterRequest extends StringRequest{
     // 서버 URL 설정 ( PHP 파일 연동 )
-    final static private String URL = "http://localhost:8080/register.php";
+    final static private String URL = "http://ferrydraw.dothome.co.kr/register.php";
     private Map<String, String> map;
 
 
-    public RegisterRequest(String userID, String userPassword, String userPassCheck, String userName, int userPhone, String userBelong, Uri profileimg, Response.Listener<String> listener) {
+    public RegisterRequest(String ID, String Password, String Name, String Phone_Num, String Belonging, Uri profileimage, Response.Listener<String> listener) {
         super(Method.POST, URL, listener, null);
 
         map = new HashMap<>();
-        map.put("userID",userID);
-        map.put("userPassword", userPassword);
-        map.put("userPassCheck", userPassCheck);
-        map.put("userName", userName);
-        map.put("userPhone", userPhone + "");
-        map.put("userBelong", userBelong);
-        map.put ("profileimg",profileimg+"");
+        map.put("ID",ID);
+        map.put("Password", Password);
+        map.put("Name", Name);
+        map.put("Phone_Num", Phone_Num + "");
+        map.put("Belonging", Belonging);
+        map.put ("profileimage",profileimage+"");
 
 
     }
