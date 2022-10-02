@@ -1,4 +1,5 @@
 package com.example.visitmanagement;
+import android.graphics.Bitmap;
 import android.net.Uri;
 
 import com.android.volley.AuthFailureError;
@@ -13,8 +14,8 @@ public class RegisterRequest extends StringRequest{
     private Map<String, String> map;
 
 
-    public RegisterRequest(String ID, String Password, String Name, String Phone_Num, String Belonging, Uri profileimage, Response.Listener<String> listener) {
-        super(Method.POST, URL, listener, null);
+    public RegisterRequest(String ID, String Password, String Name, String Phone_Num, String Belonging, Bitmap profileimage, Response.Listener<String> listener, Response.ErrorListener errorListener) {
+        super(Method.POST, URL, listener, errorListener);
 
         map = new HashMap<>();
         map.put("ID",ID);
