@@ -10,8 +10,8 @@ public class LoginRequest extends StringRequest
     final static private String URL = "http://ferrydraw.dothome.co.kr/login.php";
     private Map<String, String> map;
 
-    public LoginRequest(String ID, String Password, Response.Listener<String> listener) {
-        super(Method.POST, URL, listener, null);
+    public LoginRequest(String ID, String Password, Response.Listener<String> listener, Response.ErrorListener errorListener) {
+        super(Method.POST, URL, listener, errorListener);
 
         map = new HashMap<>();
         map.put("ID",ID);

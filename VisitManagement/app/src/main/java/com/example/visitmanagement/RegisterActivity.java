@@ -56,9 +56,7 @@ public class RegisterActivity extends AppCompatActivity {
         et_phone=findViewById(R.id.et_phone);
         et_belong=findViewById(R.id.et_belong);
 
-//        tv_photo=findViewById(R.id.tv_photo);
         btn_upload = findViewById(R.id.btn_upload);
-
         imageview = (ImageView) findViewById(R.id.imageView);
 
         //업로드 버튼 클릭
@@ -115,7 +113,7 @@ public class RegisterActivity extends AppCompatActivity {
             };
 
             // 서버로 Volley를 이용해서 요청을 함.
-            RegisterRequest registerRequest = new RegisterRequest(ID, Password, Name, Phone_Num, Belonging, bitmap, responseListener,errorListener);
+            RegisterRequest registerRequest = new RegisterRequest(Name,ID, Password,  Phone_Num, Belonging, bitmap, responseListener,errorListener);
             RequestQueue queue = Volley.newRequestQueue(RegisterActivity.this);
             queue.add(registerRequest);
         });

@@ -10,7 +10,7 @@
     $Belonging = isset($_POST["Belonging"]) ? $_POST["Belonging"] : "";
 
     $statement = mysqli_prepare($con, "INSERT INTO signeduser_table VALUES (?,?,?,?,?,?)");
-    mysqli_stmt_bind_param($statement, "ssssss", $ID, $Password, $Name, $Phone_Num, $Belonging, $profileimage);
+    mysqli_stmt_bind_param($statement, "ssssss", $Name,$ID, $Password,  $Phone_Num, $Belonging, $profileimage);
     mysqli_stmt_execute($statement);
 
 
