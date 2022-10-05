@@ -43,16 +43,6 @@
                 android:layout_marginRight="30dp"
                 android:orientation="vertical" >
 
-<!--                <TextView-->
-<!--                    android:id="@+id/signNametext"-->
-<!--                    android:layout_width="match_parent"-->
-<!--                    android:layout_height="wrap_content"-->
-<!--                    android:layout_marginBottom="5dp"-->
-<!--                    android:text=""-->
-<!--                    android:textSize="20dp"-->
-<!--                    android:textStyle="bold"-->
-<!--                    />-->
-
                 <TextView
                     android:id="@+id/date_text"
                     android:layout_width="match_parent"
@@ -83,18 +73,12 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
 
-                    <TextView
-                        android:id="@+id/placeView"
-                        android:layout_width="wrap_content"
-                        android:layout_height="40dp"
-                        android:layout_marginBottom="20dp"
-                        android:ems="15"
-                        android:text="" />
+
                     <Spinner
                         android:id="@+id/spinner"
-                        android:layout_centerHorizontal="true"
-                        android:layout_width="20dp"
-                        android:layout_height="wrap_content"
+                        android:layout_width="250dp"
+                        android:layout_height="50dp"
+                        android:dropDownWidth="200dp"
                         android:spinnerMode="dropdown"/>
 
 
@@ -145,7 +129,7 @@
                     android:gravity="center">
 
 
-                    <androidx.appcompat.widget.AppCompatButton
+                    <Button
                         android:id="@+id/confirmbutton"
                         android:layout_width="wrap_content"
                         android:layout_height="40dp"
@@ -154,15 +138,15 @@
                         android:textColor="#ffffff"
                         android:textSize="16sp"
                         android:textStyle="bold" />
-                    <androidx.appcompat.widget.AppCompatButton
-                        android:id="@+id/cancelbutton"
-                        android:layout_width="wrap_content"
-                        android:layout_height="40dp"
-                        android:layout_marginLeft="10dp"
-                        android:text="취소"
-                        android:textColor="#ffffff"
-                        android:textSize="16sp"
-                        android:textStyle="bold" />
+<!--                    <Button-->
+<!--                        android:id="@+id/cancelbutton"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="40dp"-->
+<!--                        android:layout_marginLeft="10dp"-->
+<!--                        android:text="취소"-->
+<!--                        android:textColor="#ffffff"-->
+<!--                        android:textSize="16sp"-->
+<!--                        android:textStyle="bold" />-->
                 </LinearLayout>
 
 
