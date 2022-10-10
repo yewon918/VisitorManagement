@@ -12,7 +12,7 @@
     <!-- 공통모듈 lib -->
     <!-- <?php include "./header.php"; ?> -->
     </header>
- 
+
     <div id="container" class="main_container">
         <!--여기에 백그라운드 사진 넣기-->
         <div style="padding: 20px;"></div>
