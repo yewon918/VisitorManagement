@@ -1,82 +1,114 @@
 header {
-    width: 100%;
-    height: 50px;
-    
+  width: 100%;
+  height: 50px;
 }
 
 footer {
-    width: 100%;
-    height: 50px;
-    border:1px solid black;
+  padding-top: 1%;
+  padding-left: 10%;
+  width: 99%;
+  height: 10%;
+  background-color: rgb(205, 200, 207);
 }
 
 #main {
-    margin: 0 auto;
-    position: relative;
-    width: 1440px;
-    height: 850px;
-    border:5px solid black;
-    
+  margin: 0 auto;
+  position: relative;
+  width: 90%;
+  height: 750px;
+  /* border: 5px solid black; */
 }
-
 
 ul {
-    list-style: none;
-    padding-left: 65px;
+  list-style: none;
+  padding-left: 65px;
 }
-li{
-    font-size:20px;
-    width: 135px;
-    height: 20px;
-    padding-top:30px;
-    padding-bottom: 30px;
-    color : white;
-
+li {
+  font-size: 20px;
+  width: 135px;
+  height: 20px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  color: white;
 }
 #maintext {
-    width: 690px;
-    height: 120px;
-    position: absolute;
-    top: 10%;
-    left: 55%;
-    transform: translate(-50%,-50%);
-    text-align: center;
-    color: black;
-    font-size: 40px;
+  width: 800px;
+  height: 120px;
+  position: absolute;
+  top: 20%;
+  left: 55%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: black;
+  font-size: 40px;
 }
 #select {
-    width: 690px;
-    height: 120px;
-    position: relative;
-    top: 28%;
-    left: 19%;
-    transform: translate(-50%,-50%);
-    text-align: center;
-    color: black;
-  
+  width: 690px;
+  height: 120px;
+  position: relative;
+  top: 28%;
+  left: 19%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: black;
 }
 
 #maintable {
-    width: 900px;
-    height: 500px;
-    position: absolute;
-    top: 55%;
-    left: 55%;
-    transform: translate(-50%,-50%);
-    background-color: #8a6161;
+  width: 900px;
+  height: 500px;
+  position: absolute;
+  top: 55%;
+  left: 55%;
+  transform: translate(-50%, -50%);
+  background-color: #8a6161;
 }
-#sidebar {
-    position:relative;
-    float: left;
-    width: 200px;
-    height: 850px;
-    border: 1px solid gray;
-    background-color: rgb(83, 154, 236); ;
+/* #sidebar {
+  position: relative;
+  float: left;
+  width: 200px;
+  height: 850px;
+  border: 1px solid gray;
+  background-color: rgb(83, 154, 236);
 }
+#sidebarel {
+  top: 15%;
+} */
 
+/*====== navbar css start ======*/
 nav {
-    width: 200px;
-    position: absolute;
-    top:175px;
-
+  /* width: 200px; */
+  position: absolute;
+  /* top: 175px; */
 }
+
+.nav-item {
+  color: white;
+  text-decoration: solid;
+}
+
+.nav-item:hover {
+  color: grey;
+}
+#emer {
+  margin-left: 10%;
+  padding-top: 2%;
+}
+
+.text-muted {
+  padding-left: 2%;
+}
+
+.titlenav {
+  padding-left: 1%;
+  padding-top: 1%;
+  padding-bottom: 0%;
+  margin-bottom: 0%;
+  /* height: 30px; */
+}
+
+.welcome {
+  padding-left: 0%;
+  margin-left: 0%;
+}
+
+/*====== navbar css end ======*/
