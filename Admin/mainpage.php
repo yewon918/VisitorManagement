@@ -21,16 +21,16 @@
 
 </head>
 <!-- <?php
-    $conn=mysqli_connect('localhost','root','root','rtw');
+    $conn=mysqli_connect('localhost','ferrydraw','hsh0729!','ferrydraw');
     session_start();
     ?>
 
     <!-- php연동 
     <?php
         $servername = "localhost";
-        $username = "root";
-        $password = "root";
-        $dbname = "rtw";
+        $username = "ferrydraw";
+        $password = "hsh0729!";
+        $dbname = "ferrydraw";
     ?>
 
 <?php

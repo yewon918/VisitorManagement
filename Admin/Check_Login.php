@@ -8,16 +8,16 @@
 <?php
    session_start();
     $host = 'localhost';
-    $user = 'root';
-    $pw = 'root';
-    $dbName = 'rtw';
+    $user = 'ferrydraw';
+    $pw = 'hsh0729!';
+    $dbName = 'ferrydraw';
     $mysqli = new mysqli($host, $user, $pw, $dbName);
       
       //login.php에서 입력받은 id, password
       $ID=$_POST['ID'];
       $Password=$_POST['Password'];
       
-      $q = "SELECT * FROM signeduser_table WHERE ID= '$ID' && Password = '$Password'";
+      $q = "SELECT * FROM administrator_table WHERE ID= '$ID' && Password = '$Password'";
       $result = $mysqli->query($q);
       $row = $result->fetch_array(MYSQLI_ASSOC);
       
