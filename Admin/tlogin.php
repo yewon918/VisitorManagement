@@ -1,7 +1,7 @@
 <?php
 session_start();
-$conn=mysqli_connect('localhost','root','root','path');
-
+$conn=mysqli_connect('localhost','ferrydraw','hsh0729!','ferrydraw');
+// 이친구는 대체 뭐하는 php인가용
     if (isset($_POST['user_id'])&&isset($_POST['userpw'])){
         $user_id=$_POST['user_id'];
         $userpw=$_POST['userpw'];
