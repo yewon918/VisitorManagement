@@ -1,8 +1,6 @@
 package com.example.visitmanagement;
 
 import androidx.appcompat.app.AppCompatActivity;
-
-import android.content.Intent;
 import android.os.Bundle;
 import android.app.ProgressDialog;
 import android.os.AsyncTask;
@@ -61,8 +59,8 @@ public class history extends AppCompatActivity {
 
         //필요없는코드
         //대신 메인 메뉴로 돌아가는 코드 넣기
-        Button button_lookup = (Button) findViewById(R.id.button_lookup);
-        button_lookup.setOnClickListener(new View.OnClickListener() {
+        Button button_return = (Button) findViewById(R.id.button_return);
+        button_return.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
 
                 mArrayList.clear();
@@ -70,15 +68,6 @@ public class history extends AppCompatActivity {
 
                 GetData task = new GetData();
                 task.execute( "http://" + IP_ADDRESS + "/getjson.php", "");
-            }
-        });
-
-        Button button_return = (Button) findViewById(R.id.button_return);
-        button_return.setOnClickListener(new View.OnClickListener(){
-            public void onClick(View v){
-                // 메인 메뉴로 돌아가기
-                Intent intent = new Intent(history.this, menu.class);
-                startActivity(intent);
             }
         });
 
