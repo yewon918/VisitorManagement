@@ -1,8 +1,8 @@
-.content {
+body {
   background-image: url(home1.jpg);
   background-repeat: no-repeat;
-  /* background-size: cover; */
-  background-size: auto;
+  background-size: cover;
+
 }
 
 /*====== navbar css start ======*/
@@ -44,11 +44,7 @@ nav {
 
 /*====== navbar css end ======*/
 
-.content {
-  margin-left: 25%;
-  padding: 1px 16px;
-  height: 1000px;
-}
+
 .title {
   text-align: center;
   font-size: 50px;
