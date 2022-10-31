@@ -46,7 +46,7 @@ else {
       </div>
       <div class="collapse" id="navbarToggleExternalContent">
         <div class="bg-dark p-4">
-          <h5 class="welcome">000 관리자님 환영합니다!</h5>
+        <h5 class="welcome"><?php echo "Hi, $ID";?> 관리자님 환영합니다!</h5>
           <a class="nav-item nav-link" href="home.php">HOME</a>
           <a class="nav-item nav-link" href="mainpage.php">방문자 조회</a>
           <a class="nav-item nav-link" href="statistic.php">방문자 통계</a>
@@ -75,13 +75,6 @@ else {
       </nav>
     </div>
     <!-- ====== Navbar end ======= -->
-
-
-    <div class="content">
-    <!-- 여기에 내용넣기
-    사진 및 회사 이름 방문자 관리 시스템 -->
-    </div>
-       
    
     
    <!--  부트스트랩 js 사용 -->

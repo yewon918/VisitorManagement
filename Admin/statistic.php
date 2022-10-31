@@ -14,7 +14,10 @@
     <link rel="stylesheet" type="text/css" href="statistic.css">
     <script type="text/javascript" src="jquery.min.js"></script>
     <script type="text/javascript" src="Chart.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+    <script src="https://kit.fontawesome.com/c881082b49.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.6.0/chart.min.js" integrity="sha512-GMGzUEevhWh8Tc/njS0bDpwgxdCJLQBWG3Z2Ct+JGOpVnEmjvNx6ts4v6A2XJf1HOrtOsfhv3hBKpK9kE5z8AQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="text/javascript" src="./jquery.min.js"></script>
+    <script type="text/javascript" src="./Chart.min.js"></script>
     <title>Document</title>
 </head>
 <body>
@@ -26,7 +29,7 @@
       </div>
       <div class="collapse" id="navbarToggleExternalContent">
         <div class="bg-dark p-4">
-          <h5 class="welcome">000 관리자님 환영합니다!</h5>
+        <h5 class="welcome"><?php echo "Hi, $ID";?> 관리자님 환영합니다!</h5>
           <a class="nav-item nav-link" href="home.php">HOME</a>
           <a class="nav-item nav-link" href="mainpage.php">방문자 조회</a>
           <a class="nav-item nav-link" href="statistic.php">방문자 통계</a>
@@ -55,35 +58,20 @@
       </nav>
     </div>
     <!-- ====== Navbar end ======= -->
-
-<!-- <div class="sidebar">
-         <ul>
-            <!-- <div class="Logout"> 
-            <!-- <h2><?php echo "Hi, $ID($Name)";?> 
-            <button type="button" class="btn" onclick="location.href='Logout.php'">
-                LOGOUT
-            </button>
-            <!-- </div> 
-            <li><a class="Home" href="home.php">홈</a></li>
-            <li><a class="Search" href="mainpage.php">방문자 조회</a></li>
-            <li><a class="statistics" href="statistic.php">방문자 통계</a></li>
-        </ul>    
-    </div> -->
-        
     <!--통계-->
     
-   <div class="content">
-        <div class=statics>
+   <!-- <div class="content"> -->
+        <!-- <div class=statics>
 
         <canvas id="bar-chart" ></canvas>
         <script>
             new Chart(document.getElementById("bar-chart"), {
                 type: 'bar',
                 data: {
-                labels: ["Africa", "Asia", "Europe", "Latin America", "North America"],
+                labels: ["IT", "Marketing", "Europe", "Latin America"],
                 datasets: [
                     {
-                    label: "Population (millions)",
+                    label: "Visitor (명)",
                     backgroundColor: ["#3e95cd", "#8e5ea2","#3cba9f","#e8c3b9","#c45850"],
                     data: [2478,5267,734,784,433]
                     }
@@ -99,10 +87,66 @@
                 }
             });
         </script>
-        </div>
-   </div>
+        </div> -->
+        <div class=statics>
+    
+    <canvas id="graphCanvas" style="height:30vh; width:50vw" ></canvas>
+    
+    <script>
+            $(document).ready(function () {
+            showGraph();
+        });
 
+        function showGraph()
+        {
+            {
+                $.post("data.php",
+                function (data)
+                {
+                    console.log(data);
+                    var Place= [];
+                    var Visitor = [];
 
+                    for (var i in data) {
+                        Place.push(data[i].Place);
+                        Visitor.push(data[i].Visitor);
+                    }
+
+                    var chartdata = {
+                        labels: Place,
+                        datasets: [
+                            {
+                                label: 'Visitor',
+                                backgroundColor: '#2F3545',
+                                hoverBackgroundColor: '#CCCCCC',
+                                hoverBorderColor: '#666666',
+                                data: Visitor
+                            }
+                        ]
+                    };
+                    var options = {
+                                    scales : {
+                                      yAxes : [ {
+                                        ticks : {
+                                          min: 0, // 0부터 시작하게 합니다.
+                                          max:10   // 1 씩 증가하도록 설정합니다.
+                                        }
+                                      } ]
+                                    }
+                                  };
+                    var graphTarget = $("#graphCanvas");
+
+                    var barGraph = new Chart(graphTarget, {
+                        type: 'bar',
+                        data: chartdata,
+                        options:options
+                    });
+                });
+            }
+        }
+    </script>
+
+   <!-- </div> -->
 <!--  부트스트랩 js 사용 -->
 <script type="text/javascript" src="/resource/js/bootstrap.js"></script>
 

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Chart</title>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/Chart.min.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+    <!--  부트스트랩 js 사용 -->
+<script type="text/javascript" src="/resource/js/bootstrap.js"></script>
+        <!--  부트스트랩 js 사용 -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script type="text/javascript" src="./resource/js/bootstrap.js"></script>
+        <!-- 부트스트랩 css 사용 -->
+        <link rel="stylesheet" href="./resource/css/bootstrap.css" />
+        <link rel="stylesheet" href="./camera.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="https://write.corbpie.com/wp-content/litespeed/localres/aHR0cHM6Ly9jZG5qcy5jbG91ZGZsYXJlLmNvbS8=ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css"
+    <script src="https://write.corbpie.com/wp-content/litespeed/localres/aHR0cHM6Ly9jZG5qcy5jbG91ZGZsYXJlLmNvbS8=ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="value_chart.js"></script>
+
+    <style type="text/css">
+        #chart-container {
+          width: 640px;
+          height: auto;
+        }
+      </style>
+</head>
+<body>
+    <body>
+        <!-- ====== Navbar start ======= -->
+        <div class="pos-f-t">
+          <div class="titlenav navbar navbar-expand-lg navbar-dark bg-dark">
+            <h5 class="text-white h4" href="#">RTW corp. 방문자 관리 시스템</h5>
+            <span class="text-muted"> IT로 세상을 바꾸는 RTW</span>
+          </div>
+          <div class="collapse" id="navbarToggleExternalContent">
+            <div class="bg-dark p-4">
+              <a class="nav-item nav-link" href="home.php">HOME</a>
+              <a class="nav-item nav-link" href="mainpage.php">방문자 조회</a>
+              <a class="nav-item nav-link" href="statistic.php">방문자 통계</a>
+              <a class="nav-item nav-link" href="camera.html">카메라</a>
+              <button
+                type="button"
+                class="btn"
+                onclick="location.href='Logout.php'"
+              >
+                LOGOUT
+              </button>
+            </div>
+          </div>
+          <nav class="navbar navbar-dark bg-dark">
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-toggle="collapse"
+              data-target="#navbarToggleExternalContent"
+              aria-controls="navbarToggleExternalContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          </nav>
+        </div>
+        <!-- ====== Navbar end ======= -->
+        <div id="chart-container">
+            <canvas id="mycanvas"></canvas>
+          </div>
+<script type="text/javascript" src="https://write.corbpie.com/wp-content/litespeed/localres/aHR0cHM6Ly9jZG5qcy5jbG91ZGZsYXJlLmNvbS8=ajax/libs/Chart.js/2.6.0/Chart.min.js"></script>
+</body>
+</html>

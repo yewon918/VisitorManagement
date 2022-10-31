@@ -3,7 +3,7 @@ header('Content-Type: application/json');
 $conn = mysqli_connect("localhost","ferrydraw","hsh0729!","ferrydraw");
 
 //쿼리는 수정해야함 무슨 php인지 몰라서 수정 못함
-$sqlQuery = "SELECT district,population FROM statics ORDER BY district";
+$sqlQuery = "SELECT Place, COUNT(Person) AS Visitor FROM reserveform_table GROUP BY Place";
 
 $result = mysqli_query($conn,$sqlQuery);
 
