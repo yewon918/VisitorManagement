@@ -65,6 +65,11 @@ public class reservations extends AppCompatActivity {
             String Person=person.getText().toString();
             String Place = spinner.getSelectedItem().toString();
 
+            if(date.length() == 0 || reason.length() == 0 || person.length() == 0){
+                Toast.makeText( getApplicationContext(), "빈칸을 모두 입력해주세요.", Toast.LENGTH_SHORT ).show();
+                return;
+            }
+
             Response.Listener<String> responseListener= response -> {
                 try{
                     JSONObject jsonObject=new JSONObject(response);

@@ -82,6 +82,11 @@ public class RegisterActivity extends AppCompatActivity {
             String Phone_Num=et_phone.getText().toString();
             String Belonging=et_belong.getText().toString();
 
+            if(et_id.length() == 0 || et_pw.length() == 0 || et_name.length() == 0 || et_phone.length() == 0 || et_belong.length() == 0){
+                Toast.makeText( getApplicationContext(), "빈칸을 모두 입력해주세요.", Toast.LENGTH_LONG ).show();
+                return;
+            }
+
             //converting image to base64 string
             ByteArrayOutputStream baos = new ByteArrayOutputStream();
             bitmap.compress(Bitmap.CompressFormat.JPEG, 100, baos);
@@ -97,7 +102,7 @@ public class RegisterActivity extends AppCompatActivity {
                     boolean success=jsonObject.getBoolean("success");
                     if(success){
                         Toast.makeText(getApplicationContext(),"회원가입을 완료하였습니다.",Toast.LENGTH_SHORT).show();
-                        Intent intent=new Intent(RegisterActivity.this, menu.class);
+                        Intent intent=new Intent(RegisterActivity.this, LoginActivity.class);
                         startActivity(intent);
                     }else{
                         Toast.makeText(getApplicationContext(), "회원가입에 실패하였습니다.", Toast.LENGTH_SHORT).show();

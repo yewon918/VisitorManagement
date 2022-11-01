@@ -22,6 +22,7 @@ public class menu<PersonalData, UsersAdapter> extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menu);
 
+
         tv_id = findViewById(R.id.tv_id);
 
         Intent intent=getIntent();
@@ -32,6 +33,7 @@ public class menu<PersonalData, UsersAdapter> extends AppCompatActivity {
         Button mypage_btn= findViewById(R.id.btn_mypage);
         mypage_btn.setOnClickListener(view -> {
             Intent intent_mypage=new Intent(getApplicationContext(),mypage.class);
+            intent_mypage.putExtra("ID", ID);
             startActivity(intent_mypage);
         });
         //방문신청 클릭시

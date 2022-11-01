@@ -46,10 +46,18 @@
 
     <Button
         android:layout_margin="2dp"
-        android:id="@+id/button_return"
+        android:id="@+id/button_lookup"
         android:layout_width="match_parent"
         android:layout_weight="1"
         android:layout_height="0dp"
+        android:text="조회" />
+
+    <Button
+        android:id="@+id/button_return"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="2dp"
+        android:layout_weight="1"
         android:text="돌아가기" />
 
     <TextView
