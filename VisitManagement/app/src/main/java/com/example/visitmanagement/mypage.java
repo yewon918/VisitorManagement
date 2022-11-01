@@ -56,6 +56,11 @@ public class mypage<PersonalData> extends AppCompatActivity {
         my_belong=(TextView)findViewById(R.id.my_belong);
         my_phone=(TextView)findViewById(R.id.my_phone);
 
+        Intent intent = getIntent();
+
+        String ID = intent.getExtras().getString("ID");
+        my_id.setText(ID);
+
         Button history_btn= findViewById(R.id.btn_history);
         history_btn.setOnClickListener(view -> {
             Intent intent_history=new Intent(getApplicationContext(),history.class);

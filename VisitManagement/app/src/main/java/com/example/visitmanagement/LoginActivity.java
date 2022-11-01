@@ -48,6 +48,12 @@ public class LoginActivity extends AppCompatActivity {
                 // EditText에 현재 입력되어있는 값을 get(가져온다)해온다.
                 String ID = et_id.getText().toString();
                 String Password = et_pw.getText().toString();
+
+                if(et_id.length() == 0 || et_pw.length() == 0){
+                    Toast.makeText( getApplicationContext(), "아이디와 비밀번호를 모두 입력해주세요.", Toast.LENGTH_SHORT ).show();
+                    return;
+                }
+
                 Response.Listener<String> responseListener = new Response.Listener<String>() {
                     @Override
                     public void onResponse(String response) {
