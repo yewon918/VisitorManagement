@@ -8,34 +8,34 @@
     <TextView
         android:id="@+id/history"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="60dp"
         android:layout_gravity="center"
+        android:layout_marginTop="0dp"
+        android:background="#000000"
         android:gravity="center"
         android:text="나의 방문 기록"
-        android:layout_marginTop="10dp"
-
         android:textSize="20sp"
-        />
-<!--    <TextView-->
-<!--        android:id="@+id/date"-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:layout_gravity="center"-->
-<!--        android:gravity="center"-->
-<!--        android:text="한달단위 날짜 출력(2021.01)"-->
-<!--        android:layout_marginBottom="10dp"-->
-<!--        android:textSize="20sp"-->
-<!--        />-->
-<!--    <TextView-->
-<!--        android:id="@+id/confirm_history"-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:layout_gravity="center"-->
-<!--        android:gravity="center"-->
-<!--        android:text="날짜랑 승인여부 출력"-->
-<!--        android:layout_marginBottom="10dp"-->
-<!--        android:textSize="20sp"-->
-<!--        />-->
+        android:textColor="#ffffff"/>
+    <!--    <TextView-->
+    <!--        android:id="@+id/date"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_gravity="center"-->
+    <!--        android:gravity="center"-->
+    <!--        android:text="한달단위 날짜 출력(2021.01)"-->
+    <!--        android:layout_marginBottom="10dp"-->
+    <!--        android:textSize="20sp"-->
+    <!--        />-->
+    <!--    <TextView-->
+    <!--        android:id="@+id/confirm_history"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_gravity="center"-->
+    <!--        android:gravity="center"-->
+    <!--        android:text="날짜랑 승인여부 출력"-->
+    <!--        android:layout_marginBottom="10dp"-->
+    <!--        android:textSize="20sp"-->
+    <!--        />-->
     <androidx.recyclerview.widget.RecyclerView
         android:layout_width="match_parent"
         android:layout_height="0dp"
@@ -44,22 +44,20 @@
         android:padding="5dp"
         android:id="@+id/listView_main_list" />
 
-    <Button
-        android:layout_margin="2dp"
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/button_lookup"
         android:layout_width="match_parent"
-        android:layout_weight="1"
-        android:layout_height="0dp"
-        android:text="조회" />
+        android:layout_height="60dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="6dp"
+        android:padding="0dp"
+        android:textSize="20sp"
+        android:text="조회"
 
-    <Button
-        android:id="@+id/button_return"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_margin="2dp"
-        android:layout_weight="1"
-        android:text="돌아가기" />
+        />
 
+<!--이 Textview 지우면 밑에 돌아가기 버튼 정상 크기 되니까 신경쓰지 말고 지우기-->
     <TextView
         android:layout_width="match_parent"
         android:layout_height="0dp"
@@ -68,5 +66,21 @@
         android:padding="5dp"
         android:id="@+id/textView_main_result" />
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button_return"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:layout_weight="0.7"
+            android:background="#002187"
+            android:text="돌아가기"
+            android:textColor="#ffffff"
+            android:textSize="20dp"
+            />
+    </LinearLayout>
 
 </LinearLayout>
