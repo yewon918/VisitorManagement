@@ -1,5 +1,7 @@
 <resources>
     <string name="app_name">VisitManagement</string>
+    <string name="welcome">IT로 세상을 바꾸는</string>
+    <string name="welcomeRTW">RTW</string>
     <string name="hint_id">ID를 입력하세요</string>
     <string name="hint_pw">비밀번호를 입력하세요</string>
     <string name="hint_pwcheck">비밀번호를 다시 한 번 입력하세요</string>
@@ -8,9 +10,8 @@
     <string name="hint_photo">사진을 업로드 하세요</string>
     <string name="hint_belong">소속을 입력하세요</string>
     <string name="btn_login">로그인</string>
-    <string name="btn_login_user">회원로그인</string>
-    <string name="btn_login_nuser">비회원로그인</string>
-    <string name="btn_register">회원가입</string>
+    <string name="btn_login_user">로그인</string>
+    <string name="btn_register">가입하기</string>
     <string name="btn_logout">로그아웃</string>
     <string name="register_text">회원가입</string>
     <string name="login_text">로그인</string>

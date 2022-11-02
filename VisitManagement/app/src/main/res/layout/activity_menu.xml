@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#ffffff"
+    android:background="#002187"
     android:gravity="center"
     android:orientation="vertical"
     android:padding="10dp">
@@ -32,6 +32,7 @@
                 android:layout_marginTop="8dp"
                 android:layout_marginEnd="8dp"
                 android:layout_marginRight="8dp"
+                android:textColor="#ffffff"
                 android:text="아이디"
                 android:textSize="30sp"
                 />
@@ -44,6 +45,7 @@
                 android:layout_marginTop="8dp"
                 android:layout_marginEnd="8dp"
                 android:layout_marginRight="8dp"
+                android:textColor="#ffffff"
                 android:text="님 환영합니다."
                 android:textSize="24sp"
                 />
@@ -52,18 +54,22 @@
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/btn_mypage"
             android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="50dp"
             android:layout_marginTop="20dip"
             android:text="마이페이지"
-            android:textColor="#222222" />
+            android:background="#ffffff"
+            android:textColor="#222222"
+            android:textSize="20dp"/>
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/btn_reservation"
             android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="50dp"
+            android:background="#ffffff"
             android:layout_marginTop="20dip"
             android:text="방문신청"
-            android:textColor="#222222" />
+            android:textColor="#222222"
+            android:textSize="20dp"/>
 
 
 

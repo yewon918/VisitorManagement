@@ -11,11 +11,13 @@
     <TextView
         android:id="@+id/loginText"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="60dp"
         android:layout_gravity="center"
-        android:layout_marginTop="10dp"
         android:gravity="center"
         android:text="마이페이지"
+        android:background="#000000"
+        android:textSize="20sp"
+        android:textColor="#ffffff"
         >
 
     </TextView>
@@ -23,9 +25,9 @@
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="151dp"
         android:layout_margin="40dp"
-        tools:srcCompat="@tools:sample/avatars" />
+        android:src="@drawable/ex" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -109,7 +111,17 @@
         android:layout_gravity="center"
         android:text="나의 방문 기록"
         android:layout_marginTop="50dp"/>
-<!--        android:layout_marginBottom="16dp"-->
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button_return"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#002187"
+        android:layout_marginTop="134dp"
+        android:text="돌아가기"
+        android:textColor="#ffffff"
+        android:textSize="20dp" />
+    <!--        android:layout_marginBottom="16dp"-->
 <!--        />-->
 
 
